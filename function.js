@@ -26,10 +26,11 @@ function handleKeyboarKey(event){
 
     const letterDisplay =document.getElementById('for_dis_letter');
     const currentShowLetter = letterDisplay.innerText;
-    //console.log(currentShowLetter);
 
+    if(preeKey === 'Escape'){
+        gameOver();
+    }
     if( currentShowLetter === preeKey){
-        console.log('good job')
 
         const scoreTextElement = document.getElementById('scode_num');
         const scoreText = scoreTextElement.innerText ;
@@ -44,7 +45,6 @@ function handleKeyboarKey(event){
         keyColor.style.backgroundColor = null;
 
     }else{
-        console.log('bad job')
         const lifeTextElement = document.getElementById('life_num');
         const lifeText = lifeTextElement.innerText;
         const lifeNumber = parseInt(lifeText);
