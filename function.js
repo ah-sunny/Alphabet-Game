@@ -4,8 +4,6 @@
         hiddenSection.classList.add('hidden');
         const viewSection = document.getElementById(end);
         viewSection.classList.remove('hidden');
-    
-    
     }
 
 //random letter && display function
@@ -17,7 +15,7 @@ function forDisplayLetterById(disElementId){
 //display
     const letterDisplay =document.getElementById(disElementId);
     letterDisplay.innerText = alphabet;
-
+    
     const keyColor = document.getElementById(alphabet);
     keyColor.style.backgroundColor = 'orange';
 }
